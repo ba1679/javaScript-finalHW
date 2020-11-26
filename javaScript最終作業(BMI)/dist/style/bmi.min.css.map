@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,AAAA,CACN,SAAS,CAAE,KAAM,CACjB,MAAM,CAAE,MAAM,CACjB,AACD,AAAA,OAAO,AAAA,CACH,gBAAgB,CAAC,OAAO,CACxB,OAAO,CAAE,IAAI,CAChB",
+    "sources": [
+        "../../sass/bmi.scss"
+    ],
+    "names": [],
+    "file": "bmi.min.css"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='BMI計算機,身高,體重' />
+    <!-- FB相關設定 -->
+    <meta property="og:title" content="BMI計算機" />
+    <meta property="og:description" content="你的體重標準嗎">
+    <meta property="og:type" content="website" />
+    <!-- short-icon -->
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/static/icons/svg/3373/3373122.svg" type="image/x-icon">
+    <title>BMI計算機</title>
+    <!-- 思源體字型 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+            <img src="images/BMICLogo.png" alt="BMI-logo">
+        </div>
+        <div class="caculator">
+            <label>身高 cm</label>
+            <input type="text" name="height" class="text height" placeholder="請輸入身高">
+            <label>體重 kg</label>
+            <input type="text" name="weight" class="text weight" placeholder="請輸入體重">
+        </div>
+        <div class="inputBtn">
+            <input type="button" class="resultBtn" value="看結果">
+            <!-- <div class="result">
+                <a href="#" class="status">
+                    <p class="standard-num">20.81</p>
+                    <p class="BMI-title">BMI</p>
+                    <div class="icon">
+                        <img src="images/icons_loop.png">
+                    </div>
+                </a>
+                <p>理想</p>
+            </div> -->
+        </div>
+        </div>
+        </div>
+    <div class="history container">
+            <table class="table">
+                <!-- <tr>
+                    <td class="status">
+                        理想
+                    </td>
+                    <td><span>BMI</span> 20.9</td>
+                    <td><span>weight</span> 70kg</td>
+                    <td><span>height</span> 180cm</td>
+                    <td>06-19-2020</td>
+                    <td><a class="delete" href="#">刪除</a></td>
+                </tr> -->
+            </table>
+    </div>
+    <div class="footer">
+    <img src="images/BMICLogo-footer.png" alt="BMI-logo">
+    </div>
+    
+    <script src="js/all.js"></script>
+</body>
+</html>

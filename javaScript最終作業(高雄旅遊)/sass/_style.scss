@@ -1,0 +1,182 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.goToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    cursor: pointer;
+    display: none;
+}
+.header{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/Hero.png) no-repeat center / cover;
+    padding-top: 90px;
+    position: relative;
+    h1{
+        font-size: 40px;
+        color: #fff;
+    }
+    .district{
+        width: 50%;
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 21px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+        @include iphone6(){
+            padding: 5px;
+            font-size: 16px;
+        }
+    }
+    
+    .hotArea{
+        width: 70%;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: -50px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+        @include iphone6(){
+            text-align: center;
+        }
+        h2{
+            font-size: 18px;
+        }
+        .btn{
+            border: none;
+            font-size: 18px;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px 5px 0;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
+
+.Lingya{
+    background-color: #8A82CC;
+}
+.Sanmin{
+    background-color:#FFA782 ;
+}
+.Xinxing{
+    background-color: #F5D105 ;
+}
+.Zuoying{
+    background-color: #559AC8;
+}
+.mainArea{
+    margin-top: 50px;
+    padding: 80px 50px;
+    @include ipad(){
+        padding: 80px 20px;
+    }
+    .line{
+        border-bottom: 1px dashed #559AC8;
+        position: relative;
+        i{
+            position: absolute;
+            top: -15px;
+            right: 50%;
+            z-index: 999;
+            border: 2px solid #559AC8;
+            border-radius: 50%;
+            padding: 0 5px;
+            color: #559AC8;
+            font-size: 30px;
+        }
+    }
+}
+
+.mainInfo{
+    .title{
+        text-align: center;
+        font-size: 36px;
+        color: #8A82CC;
+        padding: 50px 0;
+    }
+    .main-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        .place{
+            width: 46%;
+            margin: 2%;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            transform: scale(1);
+            transition: all .3s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            @include ipad(){
+                width: 48%;
+                margin: 1%;
+            }
+            @include iphone6(){
+                width: 98%;
+                margin-top: 2%;
+            }
+        }
+        .pic{
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            color: #fff;
+        }
+        .info{
+            padding: 20px;
+            line-height: 1.8;
+            position: relative;
+            .icon{
+                width: 20px;
+                padding-right: 5px;
+                vertical-align: middle;
+                display: inline-block;
+                }
+            .note{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                } 
+        }
+        
+    }
+}
+.place-name{
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+}
+.district-name{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.footer{
+    background-color: #559AC8;
+    padding: 30px 0;
+    font-size: 14px;
+    text-align: center;
+    .goverment{
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .sourse{
+        color: #FFD366;
+    }
+}

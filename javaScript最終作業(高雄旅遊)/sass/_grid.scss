@@ -1,0 +1,12 @@
+// ipad直式 768px
+@mixin ipad{
+    @media (max-width: 768px){
+        @content
+    }
+}
+// iphone6/7/8 plus 直式414px
+@mixin iphone6{
+    @media (max-width: 414px){
+        @content
+    }
+}

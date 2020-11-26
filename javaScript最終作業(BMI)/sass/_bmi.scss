@@ -1,0 +1,203 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.header{
+    background-color:$dark-color;
+    padding: 50px 0;
+}
+.container{
+    max-width: 750px ;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include iphone6(){
+        flex-direction: column;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .caculator{
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        label{
+            color: $light-color;
+        }
+        .text{
+            width: 250px;
+            border-radius: 8px;
+            border: 2px solid $light-color;
+            background-color: rgba(141, 138, 138, 0.212);
+            padding:5px 10px;
+            margin-bottom: 5px;
+            color: #fff;
+            
+        }
+    }
+    .inputBtn{
+        width: 220px;
+        text-align: center;
+        @include iphone6(){
+            margin-top: 10px;
+        }
+    }
+    .resultBtn{
+        background-color: $light-color;
+        color: $dark-color;
+        font-weight: 700;
+        border-radius: 50%;
+        border: none;
+        flex-shrink: 0;
+        width: 120px;
+        height: 120px;
+        font-size: 24px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+        }
+        &:active{
+            background-color: #DEA921;
+        }
+        &:focus{
+            outline: none;
+        }
+        @include iphone6(){
+            margin-top: 10px;
+        }
+    }
+    .result{
+        width: 220px;
+        position: relative; 
+        display: flex;
+        align-items: center;
+        .status{
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+          height: 120px;
+          flex-shrink: 0;
+          background-color: transparent;
+          border-radius: 50%;
+          font-size: 32px;
+          cursor: pointer; 
+          margin-right: 5px;
+          &:focus{
+            outline: none;
+          }
+          
+        }
+        .bluebtn{
+            color: #31BAF9;
+            border: 6px solid #31BAF9;
+            &:hover{
+                box-shadow: 0 0 3px 3px rgba(63, 174, 226, 0.212); 
+              }
+        }
+        .greenbtn{
+            color: #86D73E;
+            border: 6px solid #86D73E;
+            &:hover{
+                box-shadow: 0 0 3px 3px rgba(63, 226, 63, 0.212); 
+              }
+        }
+        .orangebtn{
+            color:#FF982D;
+            border: 6px solid#FF982D;
+            &:hover{
+                box-shadow: 0 0 3px 3px rgba(226, 174, 63, 0.212); 
+              }
+        }
+        .DarkOrangebtn{
+            color:#FF6C02;
+            border: 6px solid#FF6C02;
+            &:hover{
+                box-shadow: 0 0 3px 3px rgba(218, 155, 21, 0.459); 
+              }
+
+        }
+        .redbtn{
+            color: #FF1200;
+            border: 6px solid#FF1200;
+            &:hover{
+                box-shadow: 0 0 3px 3px rgba(212, 21, 21, 0.459); 
+              }
+
+        }
+        .BMI-title{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            right: 100px;
+            bottom: 10px;
+            cursor: pointer;
+            img{
+                vertical-align: middle;
+            }
+        }
+        p{
+            font-size: 32px;
+            color:  #86D73E;
+        }
+        
+    }
+}
+.history{
+    padding:50px 0;
+    margin-bottom: 125px;
+}
+.table{
+    width: 100%;
+    .status{
+        font-size: 20px;
+    }
+    .greenBorder{
+        border-left: 5px solid #86D73F;
+    }
+    .blueBorder{
+        border-left: 5px solid #31BAF9;
+    }
+    .orangeBorder{
+        border-left: 5px solid #FF982D;
+    }
+    .DarkOrangeBorder{
+        border-left: 5px solid #FF6C02;
+    }
+    .redBorder{
+        border-left: 5px solid #FF1200;
+    }
+    tr{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 20px 10px; 
+        box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+        @include iphone6(){
+            width: 550px;
+            margin: 10px;
+        }
+    }
+    td{
+        font-size: 18px;
+        a{
+            color: $dark-color;
+        }
+    }
+    span{
+        font-size: 12px;
+    }   
+}
+.footer{
+    background-color: $light-color;
+    padding: 30px 0;
+    text-align: center;
+}
